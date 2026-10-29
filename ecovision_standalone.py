@@ -20,6 +20,7 @@ import sys
 import time
 import json
 import argparse
+import textwrap
 from pathlib import Path
 from typing import Tuple, List, Dict, Any, Optional, Union
 from collections import defaultdict
@@ -1025,7 +1026,8 @@ def run_streamlit_app():
                         bin_info = cat_info["bin_details"]
                         bin_color = bin_info["color"]
 
-                    st.markdown(f"""
+                    instructions_html = "".join(f'<div class="protocol-step"><span class="step-tag">0{i+1}</span><span>{instr}</span></div>' for i, instr in enumerate(cat_info['instructions']))
+                    manifest_html = textwrap.dedent(f"""
                     <div class="dispatch-manifest" style="border-color: {bin_color}55;">
                         <div style="display: flex; justify-content: space-between; align-items: flex-start;">
                             <div>
@@ -1044,7 +1046,6 @@ def run_streamlit_app():
                                 </div>
                             </div>
                         </div>
-
                         <div class="bin-target-box" style="background: {bin_color}18; border-color: {bin_color}50;">
                             <span style="font-size: 2.3rem;">{bin_info['icon']}</span>
                             <div>
@@ -1056,17 +1057,16 @@ def run_streamlit_app():
                                 </div>
                             </div>
                         </div>
-
                         <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; margin-bottom: 0.6rem;">
                             Standard Operating Protocol (SOP)
                         </div>
-                        {"".join(f'<div class="protocol-step"><span class="step-tag">0{i+1}</span><span>{instr}</span></div>' for i, instr in enumerate(cat_info['instructions']))}
-
+                        {instructions_html}
                         <div class="eco-dividend">
                             <strong>🌱 Ecological Dividend:</strong> {cat_info['environmental_impact']}
                         </div>
                     </div>
-                    """, unsafe_allow_html=True)
+                    """).strip()
+                    st.markdown(manifest_html, unsafe_allow_html=True)
 
                     if confidence < 0.50:
                         st.markdown("""
