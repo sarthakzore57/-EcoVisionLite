@@ -19,7 +19,8 @@ Built **strictly without heavy deep learning frameworks** (No YOLO, CNNs, Tensor
 - **Interactive Web Interface:** Streamlit UI supporting **file uploads**, **live web camera input**, and **dataset sample exploration**.
 - **Segregation Bin Recommendation:** Suggests appropriate disposal bins (**Blue Dry Recyclable**, **Green Organic Compost**, **Yellow Glass**, **Red Hazardous/E-Waste**, **Purple Textile**, **Black Landfill**) along with handling rules and eco tips.
 - **Explainable Vision:** Renders the actual **HOG Gradient Vector Map** side-by-side with your photo so you can see how the computer vision algorithm detects object edges and textures.
-- **Real Empirical Evaluation:** Achieves **56.08% Top-1 Accuracy** and **80.26% Top-3 Accuracy** across 10 complex waste categories on an independent 2,452 image test set.
+- **Real Empirical Evaluation:** Achieves **62.93% Top-1 Accuracy** and **84.75% Top-3 Accuracy** across 10 complex waste categories on an independent 2,452 image test set.
+- **Cyber-Slate UI System:** Production-grade industrial telemetry design, interactive optical reticle scanner, 1-click curated test specimens, and material dispatch manifest ticket.
 
 ---
 
