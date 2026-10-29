@@ -1,0 +1,66 @@
+{
+  "dataset_root": "E:\\project\\EcoVisionLite\\data\\garbage_classification",
+  "num_classes": 10,
+  "classes": [
+    "battery",
+    "biological",
+    "cardboard",
+    "clothes",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "shoes",
+    "trash"
+  ],
+  "class_counts": {
+    "battery": 756,
+    "biological": 699,
+    "cardboard": 1411,
+    "clothes": 1892,
+    "glass": 1736,
+    "metal": 930,
+    "paper": 1336,
+    "plastic": 1597,
+    "shoes": 1449,
+    "trash": 453
+  },
+  "total_images": 12259,
+  "corrupt_images": 0,
+  "sample_shapes": {
+    "battery": [
+      "256x256x3"
+    ],
+    "biological": [
+      "256x256x3"
+    ],
+    "cardboard": [
+      "256x256x3"
+    ],
+    "clothes": [
+      "256x256x3"
+    ],
+    "glass": [
+      "256x256x3"
+    ],
+    "metal": [
+      "256x256x3"
+    ],
+    "paper": [
+      "256x256x3"
+    ],
+    "plastic": [
+      "256x256x3"
+    ],
+    "shoes": [
+      "256x256x3"
+    ],
+    "trash": [
+      "256x256x3"
+    ]
+  },
+  "extensions": {
+    ".jpg": 12258,
+    ".jpeg": 1
+  }
+}

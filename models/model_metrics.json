@@ -1,0 +1,221 @@
+{
+  "model_type": "Calibrated Linear Support Vector Classifier (LinearSVC)",
+  "features": "HOG 96x96 (1764 dims) + Dual-Zone Color (72 dims)",
+  "feature_dim": 1836,
+  "train_accuracy": 0.7463,
+  "test_accuracy": 0.6293,
+  "top3_accuracy": 0.8475,
+  "balanced_accuracy": 0.5887,
+  "train_samples": 9807,
+  "test_samples": 2452,
+  "train_time_seconds": 25.51,
+  "classification_report": {
+    "battery": {
+      "precision": 0.6692913385826772,
+      "recall": 0.5629139072847682,
+      "f1-score": 0.6115107913669064,
+      "support": 151.0
+    },
+    "biological": {
+      "precision": 0.625,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.6666666666666666,
+      "support": 140.0
+    },
+    "cardboard": {
+      "precision": 0.61198738170347,
+      "recall": 0.6879432624113475,
+      "f1-score": 0.6477462437395659,
+      "support": 282.0
+    },
+    "clothes": {
+      "precision": 0.8098765432098766,
+      "recall": 0.8654353562005277,
+      "f1-score": 0.8367346938775511,
+      "support": 379.0
+    },
+    "glass": {
+      "precision": 0.6085714285714285,
+      "recall": 0.6138328530259366,
+      "f1-score": 0.6111908177905309,
+      "support": 347.0
+    },
+    "metal": {
+      "precision": 0.44696969696969696,
+      "recall": 0.3172043010752688,
+      "f1-score": 0.3710691823899371,
+      "support": 186.0
+    },
+    "paper": {
+      "precision": 0.5567765567765568,
+      "recall": 0.5692883895131086,
+      "f1-score": 0.562962962962963,
+      "support": 267.0
+    },
+    "plastic": {
+      "precision": 0.5345911949685535,
+      "recall": 0.5329153605015674,
+      "f1-score": 0.533751962323391,
+      "support": 319.0
+    },
+    "shoes": {
+      "precision": 0.6615853658536586,
+      "recall": 0.7482758620689656,
+      "f1-score": 0.7022653721682848,
+      "support": 290.0
+    },
+    "trash": {
+      "precision": 0.5952380952380952,
+      "recall": 0.27472527472527475,
+      "f1-score": 0.37593984962406013,
+      "support": 91.0
+    },
+    "accuracy": 0.6292822185970636,
+    "macro avg": {
+      "precision": 0.6119887601874012,
+      "recall": 0.5886820281092479,
+      "f1-score": 0.5919838542909857,
+      "support": 2452.0
+    },
+    "weighted avg": {
+      "precision": 0.6230088285530555,
+      "recall": 0.6292822185970636,
+      "f1-score": 0.6219436809048096,
+      "support": 2452.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      85,
+      4,
+      14,
+      2,
+      11,
+      7,
+      4,
+      9,
+      14,
+      1
+    ],
+    [
+      0,
+      100,
+      7,
+      3,
+      8,
+      0,
+      7,
+      8,
+      4,
+      3
+    ],
+    [
+      3,
+      5,
+      194,
+      4,
+      14,
+      5,
+      22,
+      21,
+      13,
+      1
+    ],
+    [
+      0,
+      2,
+      7,
+      328,
+      3,
+      3,
+      8,
+      11,
+      17,
+      0
+    ],
+    [
+      2,
+      10,
+      18,
+      14,
+      213,
+      21,
+      17,
+      39,
+      12,
+      1
+    ],
+    [
+      13,
+      4,
+      10,
+      6,
+      30,
+      59,
+      14,
+      30,
+      17,
+      3
+    ],
+    [
+      3,
+      11,
+      31,
+      7,
+      16,
+      15,
+      152,
+      12,
+      17,
+      3
+    ],
+    [
+      5,
+      7,
+      29,
+      23,
+      35,
+      13,
+      21,
+      170,
+      13,
+      3
+    ],
+    [
+      3,
+      13,
+      4,
+      17,
+      8,
+      4,
+      15,
+      7,
+      217,
+      2
+    ],
+    [
+      13,
+      4,
+      3,
+      1,
+      12,
+      5,
+      13,
+      11,
+      4,
+      25
+    ]
+  ],
+  "classes": [
+    "battery",
+    "biological",
+    "cardboard",
+    "clothes",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "shoes",
+    "trash"
+  ]
+}
